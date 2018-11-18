@@ -37,7 +37,7 @@ func main() {
 		return
 	}
 
-	beautifiedPath := fmt.Sprintf("beautified-%s", *fileFlag)
+	beautifiedPath := fmt.Sprintf("%s", *fileFlag)
 	beautifiedFile, err := os.Create(beautifiedPath)
 	if err != nil {
 		fmt.Println("😢 Error occured while creating new file", err.Error())
